@@ -1,25 +1,25 @@
 {
-  "totalTrips": 28,
-  "totalDistance": 3431,
+  "totalTrips": 29,
+  "totalDistance": 529,
   "activeDrivers": 3,
-  "averagePerTrip": 122.5,
+  "averagePerTrip": 18.2,
   "driverBreakdown": {
+    "Fra": {
+      "distance": 171,
+      "trips": 10,
+      "avgPerTrip": 17.1
+    },
+    "Gabbo": {
+      "distance": 175,
+      "trips": 9,
+      "avgPerTrip": 19.5
+    },
     "Mattia": {
       "distance": 183,
       "trips": 10,
       "avgPerTrip": 18.3
-    },
-    "Fra": {
-      "distance": 344,
-      "trips": 9,
-      "avgPerTrip": 38.3
-    },
-    "Gabbo": {
-      "distance": 2904,
-      "trips": 9,
-      "avgPerTrip": 322.7
     }
   },
-  "lastUpdated": "2025-09-01T14:07:30.137424",
-  "lastUpdatedFormatted": "September 01, 2025 at 02:07 PM"
+  "lastUpdated": "2025-09-01T16:24:40.553486",
+  "lastUpdatedFormatted": "September 01, 2025 at 04:24 PM"
 }
