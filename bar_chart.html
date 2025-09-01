@@ -121,7 +121,7 @@
         
         <div class="stats-summary">
             <div class="stat-item">
-                <div class="stat-number">503</div>
+                <div class="stat-number">518</div>
                 <div class="stat-label">Total Distance - km</div>
             </div>
             <div class="stat-item">
@@ -129,11 +129,11 @@
                 <div class="stat-label">Active Drivers</div>
             </div>
             <div class="stat-item">
-                <div class="stat-number">27</div>
+                <div class="stat-number">28</div>
                 <div class="stat-label">Total Trips</div>
             </div>
             <div class="stat-item">
-                <div class="stat-number">18.6</div>
+                <div class="stat-number">18.5</div>
                 <div class="stat-label">Avg per Trip - km</div>
             </div>
         </div>
@@ -146,7 +146,7 @@
             labels: ['Fra', 'Gabbo', 'Mattia'],
             datasets: [{
                 label: 'Distance (km)',
-                data: [145.6469027476479, 175.10084367230812, 182.71581814477395],
+                data: [160.34910768499958, 175.10084367230812, 182.71581814477395],
                 backgroundColor: ['rgba(54, 162, 235, 0.8)', 'rgba(75, 192, 192, 0.8)', 'rgba(255, 206, 86, 0.8)'],
                 hoverBackgroundColor: ['rgba(54, 162, 235, 1)', 'rgba(75, 192, 192, 1)', 'rgba(255, 206, 86, 1)'],
                 borderColor: ['rgba(54, 162, 235, 1)', 'rgba(75, 192, 192, 1)', 'rgba(255, 206, 86, 1)'],
@@ -178,7 +178,7 @@
                             },
                             label: function(context) {
                                 const driverIndex = context.dataIndex;
-                                const trips = [np.int64(8), np.int64(9), np.int64(10)][driverIndex];
+                                const trips = [np.int64(9), np.int64(9), np.int64(10)][driverIndex];
                                 const distance = context.parsed.y;
                                 const avgPerTrip = (distance / trips).toFixed(1);
                                 return [
