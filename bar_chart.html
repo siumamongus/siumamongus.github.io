@@ -121,7 +121,7 @@
         
         <div class="stats-summary">
             <div class="stat-item">
-                <div class="stat-number">529 km</div>
+                <div class="stat-number">538 km</div>
                 <div class="stat-label">Total Distance</div>
             </div>
             <div class="stat-item">
@@ -129,11 +129,11 @@
                 <div class="stat-label">Active Drivers</div>
             </div>
             <div class="stat-item">
-                <div class="stat-number">29</div>
+                <div class="stat-number">30</div>
                 <div class="stat-label">Total Trips</div>
             </div>
             <div class="stat-item">
-                <div class="stat-number">18.2 km</div>
+                <div class="stat-number">17.9 km</div>
                 <div class="stat-label">Avg per Trip</div>
             </div>
         </div>
@@ -143,10 +143,10 @@
         const ctx = document.getElementById('distanceChart').getContext('2d');
         
         const data = {
-            labels: ['Fra', 'Gabbo', 'Mattia'],
+            labels: ['Gabbo', 'Fra', 'Mattia'],
             datasets: [{
                 label: 'Distance (km)',
-                data: [170.89304948786662, 175.10084367230812, 182.71581814477395],
+                data: [175.10084367230812, 180.38737746415703, 182.71581814477395],
                 backgroundColor: ['rgba(54, 162, 235, 0.8)', 'rgba(75, 192, 192, 0.8)', 'rgba(255, 206, 86, 0.8)'],
                 hoverBackgroundColor: ['rgba(54, 162, 235, 1)', 'rgba(75, 192, 192, 1)', 'rgba(255, 206, 86, 1)'],
                 borderColor: ['rgba(54, 162, 235, 1)', 'rgba(75, 192, 192, 1)', 'rgba(255, 206, 86, 1)'],
@@ -178,7 +178,7 @@
                             },
                             label: function(context) {
                                 const driverIndex = context.dataIndex;
-                                const trips = [np.int64(10), np.int64(9), np.int64(10)][driverIndex];
+                                const trips = [np.int64(9), np.int64(11), np.int64(10)][driverIndex];
                                 const distance = context.parsed.y;
                                 const avgPerTrip = (distance / trips).toFixed(1);
                                 return [
